@@ -23,5 +23,10 @@ output "worker_num" {
   description = "number of workers for the cluster"
 }
 
+output "worker_pools" {
+  value       = "${ibm_container_cluster.cluster.worker_pools}"
+  description = "worker_pools for the cluster"
+}
+
 
 
